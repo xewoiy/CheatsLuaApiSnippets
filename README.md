@@ -5,3 +5,5 @@ Neverlose - In development,
 Gamesense - Not added,
 Onetap - Not added,
 Legendware - Not added,
+
+C:\Users\*\AppData\Roaming\Code\User\snippets
