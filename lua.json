@@ -1,0 +1,129 @@
+{
+	"Menu_Switch": {
+		"prefix": "nl_menu_switch",
+		"body": [
+		"local $1 = Menu.Switch('$2', '$3', false, 'Tooltip')",
+		]
+	},
+	"Menu_SliderInt": {
+		"prefix": "nl_menu_sliderint",
+		"body": [
+		"local $1 = Menu.SliderInt('$2', '$3', 50, 0, 100, 'Tooltip')",
+		]
+	},
+	"Menu_SliderFloat": {
+		"prefix": "nl_menu_sliderfloat",
+		"body": [
+		"local $1 = Menu.SliderFloat('$2', '$3', 50.0, 0.0, 100.0, 'Tooltip')",
+		]
+	},
+	"Menu_Combo": {
+		"prefix": "nl_menu_combo",
+		"body": [
+		"local $1 = Menu.$2Combo('$3', '$4', {'$5', '$6', '$7'}, 0, 'Tooltip')",
+		]
+	},
+	"Menu_TextBox": {
+		"prefix": "nl_menu_textbox",
+		"body": [
+		"local $1 = Menu.TextBox('$2', '$3', 64, 'Value', 'Tooltip')",
+		]
+	},
+	"Menu_Text": {
+		"prefix": "nl_menu_text",
+		"body": [
+		"Menu.Text('$1', '$2')",
+		]
+	},
+	"Menu_Button": {
+		"prefix": "nl_menu_button",
+		"body": [
+		"local $1 = Menu.Button('$2', '$3', 'Tooltip')",
+		]
+	},
+	"Menu_ColorEdit": {
+		"prefix": "nl_menu_coloredit",
+		"body": [
+		"local $1 = Menu.ColorEdit('$2', '$3', Color.new(1.0, 1.0, 1.0, 1.0), 'Tooltip')",
+		]
+	},
+	"Menu_Hotkey": {
+		"prefix": "nl_menu_hotkey",
+		"body": [
+		"local $1 = Menu.Hotkey('$2', '$3', 0x45, 'Tooltip')",
+		]
+	},
+
+
+
+
+
+	"Menu_RegisterCallbackDrawExample": {
+		"prefix": "nl_menu_registercallbackdrawexample",
+		"body": [
+		"Cheat.RegisterCallback('draw', function()",
+		"    Render.Text('Hello world, it's me', Vector2.new(10.0, 15.0), Color.new(1.0, 1.0, 1.0), 16)",
+		"end)",
+		]
+	},
+	"Menu_FireBullet": {
+		"prefix": "nl_menu_firebullet",
+		"body": [
+		"local $1 = Cheat.FireBullet(player, Vector.new(0.0, 0.0, 0.0), Vector.new(1.0, 1.0, 1.0))",
+		]
+	},
+	"Menu_AngleToForward": {
+		"prefix": "nl_menu_angletoforward",
+		"body": [
+		"local $1 = Cheat.AngleToForward(QAngle.new())",
+		]
+	},
+	"Menu_VectorToAngle": {
+		"prefix": "nl_menu_vectortoangle",
+		"body": [
+		"local $1 = Cheat.VectorToAngle(Vector.new(100, 100, 100))",
+		]
+	},
+	"Menu_IsMenuVisible": {
+		"prefix": "nl_menu_ismenuvisible",
+		"body": [
+		"local $1 = Cheat.IsMenuVisible()",
+		]
+	},
+	"Menu_GetMousePos": {
+		"prefix": "nl_menu_getmousepos",
+		"body": [
+		"local $1 = Cheat.GetMousePos()",
+		]
+	},
+	"IsKeyDown": {
+		"prefix": "nl_menu_iskeydown",
+		"body": [
+		"local $1 = Cheat.IsKeyDown(0x1) -- You can find all virtual keys here https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes",
+		]
+	},
+	"GetCheatUserName": {
+		"prefix": "nl_menu_getcheatusername",
+		"body": [
+		"local $1 = Cheat.GetCheatUserName()",
+		]
+	},
+	"GetBinds": {
+		"prefix": "nl_menu_getbinds",
+		"body": [
+		"local $1 = Cheat.GetBinds()",
+		]
+	},
+	"AddEvent": {
+		"prefix": "nl_menu_addevent",
+		"body": [
+		"Cheat.AddEvent('$1')",
+		]
+	},
+	"AddNotify": {
+		"prefix": "addnotify",
+		"body": [
+		"Cheat.AddNotify('$1', '$2')",
+		]
+	},
+}
